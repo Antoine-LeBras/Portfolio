@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css" text="style/css" />
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png">
+    <title>Antoine Le Bras | About</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_logo"><a href="index.html"><img src="image/logo.png" alt=""></a></div>
+        <div class="header_navigation">
+            <div class="header_navigation_anchor">
+                <div><a href="index.html">work</a></div>
+                <div class="header_navigation_anchor_active"><a href="#">about</a></div>
+                <div><a href="#contact-box" class="contact-link">contact</a></div>
+            </div>
+        </div>
+    </header>
+
+    <div id="contact-box">
+        <div class="contact-content">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><a href="mailto:antoine.lebras1@gmail.com">Email me <span>→</span></a></li>
+                <li><a href="tel:+652436967">Call <span>→</span></a></li>
+                <li><a href="https://www.linkedin.com/in/antoine-le-bras-031085131/">LinkedIn <span>→</span></a></li>
+            </ul>
+            <a href="#" class="close-link">close x</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="intro_container">
+            <article class="intro_text">
+                <h4>It's me! Antoine!</h4>
+                <p>Living currently in Paris I enjoy traveling abroad to experience new 
+                    cultures and learn more about different ways of life. It helps me gain 
+                    a broader perspective on the world around me and how I plan to influence 
+                    it through my work.
+                    <br><br>
+                    On top of that, I am passionate about sports and e-sports, and am constantly 
+                    on the lookout for the latest news in these fields. This allows me to stay 
+                    connected to what's going on in the world in areas I love.
+                </p>
+                <div class="intro_resume"><a href="LE BRAS Antoine - Resume.pdf" target="_blank">Resume →</a></div>
+            </article>
+            <div class="rewind">
+                <h4>Rewind of my life</h4>
+                <div class="rewind_container">
+                    <div class="rewind_block" onclick="openModal('modal1')" id="rewind1">
+                        <div class="rewind_image"><img src="image/about_cover2.png" alt=""></div>
+                        <h5>Music sounds better with you</h5>
+                        <div class="rewind_play"><img src="image/Play.svg" alt=""></div>
+                        <div class="rewind_play_base"><img src="image/Play_base.svg" alt=""></div>
+                    </div>
+                    <div class="rewind_block" onclick="openModal('modal2')" id="rewind2">
+                        <div class="rewind_image"><img src="image/about_cover.png" alt=""></div>
+                        <h5>Esport and gaming</h5>
+                        <div class="rewind_play"><img src="image/Play.svg" alt=""></div>
+                        <div class="rewind_play_base"><img src="image/Play_base.svg" alt=""></div>
+                    </div>
+                    <div class="rewind_block" onclick="openModal('modal3')" id="rewind3">
+                        <div class="rewind_image"><img src="image/about_cover3.png" alt=""></div>
+                        <h5>21.1km later</h5>
+                        <div class="rewind_play"><img src="image/Play.svg" alt=""></div>
+                        <div class="rewind_play_base"><img src="image/Play_base.svg" alt=""></div>
+                    </div>
+                    <div class="rewind_block" onclick="openModal('modal4')" id="rewind4">
+                        <div class="rewind_image"><img src="image/about_cover4.png" alt=""></div>
+                        <h5>Movie and TV</h5>
+                        <div class="rewind_play"><img src="image/Play.svg" alt=""></div>
+                        <div class="rewind_play_base"><img src="image/Play_base.svg" alt=""></div>
+                    </div>
+                    <div class="rewind_block" onclick="openModal('modal5')" id="rewind5">
+                        <div class="rewind_image"><img src="image/about_cover5.png" alt=""></div>
+                        <h5>Earth, Wind and Folks</h5>
+                        <div class="rewind_play"><img src="image/Play.svg" alt=""></div>
+                        <div class="rewind_play_base"><img src="image/Play_base.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">close x</span>
+                <div class="modal_content_container">
+                    <div class="modal_disc"><img src="image/disc1.png" alt=""></div>
+                    <div class="modal_content_block">
+                        <h2>Music sounds better with you</h2>
+                        <div class="modal_chips_container">
+                            <div class="modal_chips">house</div>
+                            <div class="modal_chips">US rap</div>
+                            <div class="modal_chips">french touch</div>
+                            <div class="modal_chips">french variety</div>
+                        </div>
+                        <div class="modal_content">From deep house to French variety to old-school US rap, 
+                            it's a way for me to experience and express emotions. I'm constantly exploring
+                             and discovering new genres, artists and styles. <br><br> For me, music is a way of 
+                             discovering an infinite universe that tells us a whole new story with each 
+                             new sound.<br><br>
+                             Artist : Daft Punk, Kanye West, Mac Miller, Sébastien Tellier and more 
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">close x</span>
+                <div class="modal_content_container">
+                    <div class="modal_disc"><img src="image/disc2.png" alt=""></div>
+                    <div class="modal_content_block">
+                        <h2>Esport and gaming</h2>
+                        <div class="modal_chips_container">
+                            <div class="modal_chips">LOL</div>
+                            <div class="modal_chips">valorant</div>
+                            <div class="modal_chips">the witcher 3</div>
+                            <div class="modal_chips">borderlands 2</div>
+                        </div>
+                        <div class="modal_content">I've been a sports fan since I was a kid, and I 
+                            discovered esport through video games and the Internet. I discovered an 
+                            incredible scene that mixes entertainment and performance, elements that 
+                            transcend a competitive universe. <br><br> This universe allows me to see how 
+                            culturally a new kind of competition is taking hold across the world, 
+                            taking advantage of new technologies and learning from the mistakes of 
+                            other competitive universes such as more traditional sports.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">close x</span>
+                <div class="modal_content_container">
+                    <div class="modal_disc"><img src="image/disc3.png" alt=""></div>
+                    <div class="modal_content_block">
+                        <h2>21.1km later</h2>
+                        <div class="modal_chips_container">
+                            <div class="modal_chips">handball</div>
+                            <div class="modal_chips">football</div>
+                            <div class="modal_chips">athletics</div>
+                            <div class="modal_chips">formula one</div>
+                            <div class="modal_chips">basketball - nba</div>
+                        </div>
+                        <div class="modal_content">I've been involved in sport since I was five, playing handball 
+                            for twelve years and athletics for a year, which led me to take up running. My passion 
+                            for sport led me to develop my self-control, prudence and analytical skills, as well 
+                            as my passion, the fervor that drives you to do what you love. I also developed my 
+                            team spirit and diplomatic skills. Because in a team sport, you have to deal with 
+                            different profiles and know how to be fair. <br><br> Thanks to running, I've discovered 
+                            solitary sport and how to set yourself challenges and meet them.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal4')">close x</span>
+                <div class="modal_content_container">
+                    <div class="modal_disc"><img src="image/disc4.png" alt=""></div>
+                    <div class="modal_content_block">
+                        <h2>Movie and TV</h2>
+                        <div class="modal_chips_container">
+                            <div class="modal_chips">house</div>
+                            <div class="modal_chips">US rap</div>
+                            <div class="modal_chips">french indie</div>
+                        </div>
+                        <div class="modal_content">
+                            As part of my ongoing love affair with what's on the screen, there's of course 
+                            the cinema, as well as TV shows. I discovered what a point of view is, what criticism
+                             is, and it also became a source of inspiration. <br><br>
+                            He also taught me the importance of storytelling: what is a story and how do you tell 
+                            it? After all, we put a lot of emphasis on the substance of the story, but the form - 
+                            how we tell it - is just as important. As a designer, this is at the heart of what makes
+                             an experience even more valuable. <br><br>
+                            Movie list : Philadelphia, Your Name, Au service de la France, Mad Men, Monty Python and the Holy Grail and so on…
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal5')">close x</span>
+                <div class="modal_content_container">
+                    <div class="modal_disc"><img src="image/disc5.png" alt=""></div>
+                    <div class="modal_content_block">
+                        <h2>Earth, Wind and Folks</h2>
+                        <div class="modal_chips_container">
+                            <div class="modal_chips">house</div>
+                            <div class="modal_chips">US rap</div>
+                            <div class="modal_chips">french indie</div>
+                        </div>
+                        <div class="modal_content">
+                            As Montaigne once said, "travel shapes youth". I believe in this quote and I've been able to 
+                            experience it for myself by confronting other cultures and ways of life.
+                            These differences have put me back in my place, which is to remain humble and at times adopt 
+                            the posture of an ignoramus. As a designer, this posture means I'm always learning from the 
+                            people around me. <br><br>
+                            It also allows me to speak a foreign language and have a good level of English. Practicing 
+                            this language gives me the desire to explore new cultures and deepen my understanding of 
+                            these languages, in particular by reinforcing my Dutch skills with Duolingo, and to do 
+                            so in a concrete way with you.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="resume_container">
+            <div class="resume_block">
+                <h5 class="resume_title">Professional</h5>
+                <div class="resume_info">
+                    <div class="resume_list">Product designer <span>(Apprentice)</span> - Andjaro <span>(2 years)</span></div>
+                    <div class="resume_list">UX-UI designer <span>(Intern)</span> - Slumberland <span>(6 months)</span></div>
+                    <div class="resume_list">UI designer & Developer <span>(Intern)</span> - DataGrowb’ <span>(3 months)</span></div>
+                </div>
+            </div>
+            <div class="resume_block">
+                <h5 class="resume_title">Education</h5>
+                <div class="resume_info">
+                    <div class="resume_list">UX Design & Research <span>(Master’s degree)</span> - ECV Digital Paris</div>
+                    <div class="resume_list">Digital Project Management <span>(Bachelor degree)</span>  - ECV Digital Paris</div>
+                    <div class="resume_list">Scientific Baccalauréat - La Mennais Guérande</div>
+                </div>
+            </div>
+            <div class="resume_block_certification">
+                <h5 class="resume_title">Certifications</h5>
+                <div class="resume_info">
+                    <div class="resume_list">TOEIC <span>(825pts out of 990)</span></div>
+                    <div class="resume_list">Opquast <span>(745pts out of 1000)</span></div>
+                    <div class="resume_list">GreenIT <span>(Digital Service Ecodesign)</span></div>
+                    <div class="resume_list">Duolingo league <span>(Amethyst league)</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

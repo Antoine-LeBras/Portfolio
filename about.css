@@ -1,0 +1,582 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    background: #101214;
+}
+
+
+.header{
+    width: 100%;
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 0;
+    top: 0;
+    background: #101214;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .5px solid #23272B;
+    z-index: 30;
+}
+.header_logo{
+    width: 4%;
+    margin-left: 2.5%;
+}
+.header_logo img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.header_navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 2.5%;
+}
+.header_navigation_anchor{
+    margin-right: 2.5%;
+    display: flex;
+    width: 17.5%;
+}
+.header_navigation_anchor_mobile{
+    display: none;
+}
+.header_navigation_link{
+    margin-right: 7.5%;
+}
+
+.header_navigation a{
+    text-decoration: none;
+    /* typo */
+    color: #DFE4EA;
+    font-family: 'Hanken Grotesk';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+.header_navigation a:hover{
+    text-decoration: underline;
+}
+.header_navigation_anchor_active{
+    text-decoration: underline;
+    color: #DFE4EA;
+}
+.header_navigation_anchor_active a{
+    font-weight: 600;
+}
+
+/* --- contact --- */
+
+
+#contact-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 18, 20, 0.98);;
+    z-index: 100;
+  }
+  
+  .contact-content {
+    margin-top: 120px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  .contact-content h2 {
+    margin-left: 2.5%;
+    margin-top: 0;
+    font-family: 'Hanken Grotesk';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 42px; /* 131.25% */    
+    color: #B8C2CE;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #3A4149;
+    width: 95%;
+  }
+  
+  .contact-content ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 2.5%;
+  }
+  
+  .contact-content li {
+    margin-bottom: 50px;
+  }
+  
+  .contact-content a {
+    text-decoration: none;
+    width: 80%;
+    margin-right: 0;
+  }
+  li a{
+    color: #B8C2CE;
+    font-family: 'Hanken Grotesk';
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 56px; /* 131.25% */
+  }
+  .contact-content span{
+    font-size: 40px;
+  }
+  
+  .close-link {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 4%;
+    left: 92%;
+    color: #B8C2CE;
+    font-family: 'Hanken Grotesk';
+  }
+  
+
+
+
+
+/* -- main -- */
+
+/* -- heading -- */
+
+.intro_container{
+    margin-top: 160px;
+    width: 95%;
+    margin-left: 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.intro_text{
+    width: 40%;
+    margin-left: 0;
+}
+.intro_text h4, 
+.rewind h4{
+    color: #D1D5DB;
+    font-family: 'Hanken Grotesk';
+    text-transform: uppercase;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;    
+}
+.intro_text p{
+    margin-top: 16px;
+    color: #B8C2CE;
+    font-family: 'Hanken Grotesk';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22.4px; /* 165% */   
+}
+.intro_resume{
+    margin-top: 16px;
+}
+.intro_resume a{
+    color: #B8C2CE;
+    font-family: 'Hanken Grotesk';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+/* -- rewind -- */
+
+.rewind{
+    width: 27%;
+    margin-right: 2.5%;
+}
+.rewind h4{
+    margin-bottom: 16px;
+}
+.rewind_container{
+    width: 100%;
+}
+.rewind_block{
+    border-bottom: .5px solid #3A4149;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+}
+.rewind_image{
+    width: 48px;
+    height: 48px;
+    margin-left: 0;
+    border-radius: 4px;
+    margin-right: 0;
+    margin-left: 4px;
+}
+.rewind_image img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.rewind_block h5{
+    color: #B8C2CE;
+    font-family: 'Hanken Grotesk';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */   
+    margin-left: 16px;
+}
+.rewind_play_base{
+    margin-right: 8px;
+}
+.rewind_play{
+    display: none;
+    margin-right: 8px;
+}
+.rewind_block:hover .rewind_play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.rewind_block:hover .rewind_play_base{
+    display: none;
+}
+.rewind_block:hover{
+    background: #3A4149;
+}
+
+/* -- modal interest -- */
+/* Le reste du code reste inchangé */
+
+/* -- modal interest -- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(45, 47, 48, 0.50);
+    transition: background-color 0.3s ease;
+}
+
+.close {
+    float: right;
+    color: #B8C2CE;
+    font-family: 'Hanken Grotesk';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal-content {
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #101214;
+    border-radius: 4px;
+    width: 80%;
+}
+
+.modal_content_container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    padding-bottom: 30px;
+}
+
+.modal_disc {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transition: transform 0.3s ease-out;
+    animation: rotateInfinite 10s linear infinite;
+}
+
+/* Ajoutez la règle pour la pause de l'animation */
+.modal_disc.paused {
+    animation-play-state: paused;
+}
+.modal_disc:hover{
+    animation: none;
+}
+
+.modal_disc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes rotateInfinite {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.modal_content_block {
+    width: 45%;
+    margin-right: 2.5%;
+}
+
+.modal_content_block h2 {
+    font-size: 40px;
+    color: #D1D5DB;
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    margin-right: 24px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.modal_chips_container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    margin-top: 24px;
+    border-bottom: .5px solid #3A4149;
+    padding-bottom: 8px;
+}
+
+.modal_chips {
+    font-size: 14px;
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    padding: 4px 10px;
+    margin-right: 8px;
+    margin-left: 0;
+    background: #23272B;
+    color: #B8C2CE;
+    border-radius: 16px;
+}
+
+.modal_content {
+    margin-top: 24px;
+    color: #B8C2CE;
+    font-family: 'Hanken Grotesk';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+.modal.show {
+    background: rgba(45, 47, 48, 0.50);
+}
+
+/* Le reste du code reste inchangé */
+
+
+/* -- resume -- */
+
+.resume_container{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    gap: 2%;
+}
+
+.resume_block{
+    width: 35%;
+    margin-left: 0;
+}
+.resume_block_certification{
+    width: 20%;
+    margin-left: 0;
+}
+
+.resume_title{
+    text-transform: uppercase;
+    color: #D1D5DB;
+    font-family: 'Hanken Grotesk';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 162.5% */
+}
+
+.resume_info{
+    margin-top: 8px;
+}
+
+.resume_list{
+    border-bottom: .5px solid #3A4149;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    color: #DFE4EA;
+    font-family: 'Hanken Grotesk';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */   
+}
+
+.resume_list span{
+    color: #c4c4c4;
+    font-family: 'Hanken Grotesk';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;   
+}
+
+
+
+
+
+
+
+/* responsive */
+
+@media screen and (max-width: 500px){
+    
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header_logo{
+        width: 20%;
+        margin-left: auto;
+    }
+    .header_navigation{
+        margin-left: auto;
+        margin-top: 16px;
+        background: none;
+    }
+    .header_navigation_anchor{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .header_navigation_anchor div{
+        width: fit-content;
+    }
+    .header_navigation_anchor_mobile{
+        display: block ;
+    }
+    .header_navigation_contact{
+        display: none;
+    }
+    .header_navigation_link{
+        display: none;
+    }
+
+
+    /* -- heading -- */ 
+
+    .intro_container{
+        width: 95%;
+        margin-top: 180px;
+        flex-direction: column;
+    }
+    .intro_text{
+        width: 100%;
+    }
+    .intro_text h4, 
+    .rewind h4{
+        font-weight: 600;
+    }
+    .rewind{
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    /* -- modal -- */
+
+    .modal-content{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        pad: 16px;
+        margin-top: 5%;
+    }
+    .modal_content_container{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .modal_content_block{
+        width: 100%;
+    }
+    .modal_content_block h2{
+        font-size: 32px;
+    }
+    .modal_disc{
+        margin-top: 32px;
+        width: 300px;
+        height: 300px;
+    }
+    .modal_chips_container{
+        flex-wrap: wrap;
+        gap: 8px 0px;
+    }
+
+    /* -- resume -- */
+
+    .resume_container{
+        flex-direction: column;
+        margin-top: 120px;
+    }
+    .resume_block,
+    .resume_block_certification{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    /* --- contact --- */
+
+    .close-link{
+        left: 80%;
+    }
+    li a{
+        font-size: 40px;
+    }
+    .contact-content li{
+        margin-bottom: 24px;
+    }
+    .contact-content h2{
+        margin-bottom: 40px;
+    }
+    .contact-content span{
+        font-size: 32px;
+    }
+}
